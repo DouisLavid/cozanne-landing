@@ -1,1 +1,152 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.test {
+  display: none;
+  height: 1cm;
+  width: 1cm;
+  background-color: red;
+}
+
+header {
+  width: 100vw;
+  height: 3.5cm;
+  font-family: 'Alegreya', serif;
+}
+
+.header-title {
+  display: block;
+  width: 12cm;
+  margin: auto;
+  font-size: 2.5mm;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 5vh;
+  background-color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 70vh;
+}
+
+.nav-links a {
+  color: #6d6d6d;
+  text-decoration: none;
+  font-weight: light;
+  font-size: 1rem;
+}
+
+.nav-links a:hover {
+  color: #333333;
+}
+
+.nav-links a:hover::after {
+  display: inline-block;
+  -webkit-transform: translateX(2mm) rotate(90deg);
+          transform: translateX(2mm) rotate(90deg);
+  content: "››";
+}
+
+.nav-links a::after {
+  display: inline-block;
+  -webkit-transform: translateX(2mm) rotate(90deg);
+          transform: translateX(2mm) rotate(90deg);
+  content: "›";
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.menu-button {
+  display: inline-block;
+  padding: .5em;
+  background-color: #fafafa;
+  border: 1px solid #ccc;
+  display: none;
+}
+
+.burger-icon {
+  position: relative;
+  margin-top: 2.1mm;
+  margin-bottom: 2.1mm;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.burger-icon, .burger-icon::before, .burger-icon::after {
+  display: block;
+  width: 6.6mm;
+  height: 0.8mm;
+  background-color: #444;
+  outline: 1px solid transparent;
+  -webkit-transition-property: background-color, -webkit-transform;
+  -webkit-transition-property: background-color, -webkit-transform;
+  transition-property: background-color, -webkit-transform;
+  transition-property: background-color, transform;
+  transition-property: background-color, transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.burger-icon::before, .burger-icon::after {
+  position: absolute;
+  content: "";
+}
+
+.burger-icon::before {
+  top: -2.1mm;
+}
+
+.burger-icon::after {
+  top: 2.1mm;
+}
+
+.menu-button.is-active .burger-icon {
+  background-color: transparent;
+}
+
+.menu-button.is-active .burger-icon::before {
+  -webkit-transform: translateY(2.1mm) rotate(45deg);
+  transform: translateY(2.1mm) rotate(45deg);
+}
+
+.menu-button.is-active .burger-icon::after {
+  -webkit-transform: translateY(-2.1mm) rotate(-45deg);
+  transform: translateY(-2.1mm) rotate(-45deg);
+}
+
+.video {
+  width: 100vw;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.video video {
+  -webkit-transform: translateY(-15%);
+          transform: translateY(-15%);
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,109 @@
+@import "./burger";
+
+$whiteish:#F7F4ED;
+$text-grey:#333333;
+$text-lightgrey:#6d6d6d;
+$highlight:#C7B084;
+$white: white;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.test {
+    display: none;
+    height: 1cm;
+    width: 1cm;
+    background-color: red;
+}
+
+header {
+    width: 100vw;
+    height: 3.5cm;
+    font-family: 'Alegreya', serif;
+}
+
+
+.header-title {
+    display: block;
+    width: 12cm;
+    margin: auto;
+    font-size: 2.5mm;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 5vh;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 70vh;
+
+    a {
+        color: $text-lightgrey;
+        text-decoration: none;
+        font-weight: light;
+        font-size: 1rem;
+
+        &:hover {
+            color: $text-grey;
+
+            &::after {
+                display: inline-block;
+                transform: translateX(2mm) rotate(90deg);
+                content: "››";
+            }
+        }
+
+        &::after {
+            display: inline-block;
+            transform: translateX(2mm) rotate(90deg);
+            content: "›";
+        }
+    }
+
+    li {
+        list-style: none;
+    }
+}
+
+
+
+.menu-button {
+    display: inline-block;
+    padding: .5em;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+    display: none;
+}
+
+.burger-icon {
+    @include burger(6.6mm, 0.8mm, 1.3mm, #444);
+}
+
+.menu-button.is-active .burger-icon {
+    @include burger-to-cross;
+}
+
+.video {
+    width: 100vw;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.video video {
+    transform: translateY(-15%);
+    width: 100%
+}
