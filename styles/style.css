@@ -38,6 +38,7 @@ nav {
   min-height: 5vh;
   background-color: white;
   font-family: 'Roboto', sans-serif;
+  width: 100vw;
 }
 
 .nav-links {
@@ -62,20 +63,24 @@ nav {
 
 .nav-links a:hover::after {
   display: inline-block;
-  -webkit-transform: translateX(2mm) rotate(90deg);
-          transform: translateX(2mm) rotate(90deg);
+  -webkit-transform: translate(1mm, 1mm) rotate(90deg);
+          transform: translate(1mm, 1mm) rotate(90deg);
   content: "››";
 }
 
 .nav-links a::after {
   display: inline-block;
-  -webkit-transform: translateX(2mm) rotate(90deg);
-          transform: translateX(2mm) rotate(90deg);
+  -webkit-transform: translate(2mm, 1mm) rotate(90deg);
+          transform: translate(2mm, 1mm) rotate(90deg);
   content: "›";
+  font-size: 1.5em;
 }
 
 .nav-links li {
   list-style: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
 }
 
 .menu-button {

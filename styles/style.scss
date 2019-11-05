@@ -42,6 +42,7 @@ nav {
     min-height: 5vh;
     background-color: white;
     font-family: 'Roboto', sans-serif;
+    width: 100vw
 }
 
 
@@ -62,20 +63,22 @@ nav {
 
             &::after {
                 display: inline-block;
-                transform: translateX(2mm) rotate(90deg);
+                transform: translate(1mm, 1mm) rotate(90deg);
                 content: "››";
             }
         }
 
         &::after {
             display: inline-block;
-            transform: translateX(2mm) rotate(90deg);
+            transform: translate(2mm, 1mm) rotate(90deg);
             content: "›";
+            font-size: 1.5em;
         }
     }
 
     li {
         list-style: none;
+        flex: 1 1 0;
     }
 }
 
