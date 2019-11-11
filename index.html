@@ -15,6 +15,11 @@
     <link rel="icon" data-emoji="🍇" href="#" type="image/png">
     <script src="script/favicon-emoji.js" async defer></script>
     <script src="script/burger.js" async defer></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDoh - K3Jh - B7Txw5TvJWB0s5ogEuDTRc5A&callback=initMap">
+    </script>
+    <script src="script/googlemaps_callback.js"></script>
+
     <!--TODO og tags, twitter card, canonical tag-->
 </head>
 
@@ -181,8 +186,10 @@
         <a href="#">Trouvez un caviste</a>
     </section>
     <section class="loc">
-        <h1>Où sommes nous</h1>
-        Domaine de la Cozanne -- 21340 Cormot-Vauchignon
+        <div class="adresse">
+            <h1>Où sommes nous</h1>
+            Domaine de la Cozanne -- 21340 Cormot-Vauchignon
+        </div>
         <div id="map"></div>
     </section>
 

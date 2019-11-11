@@ -419,13 +419,21 @@ main :nth-child(12) {
 .loc {
   background: #C7B084;
   color: white;
-  padding: 1em 15%;
   font-size: 1.5em;
+}
+
+.loc .adresse {
+  padding: 1em 15%;
 }
 
 .loc h1 {
   color: white;
   text-align: start;
   font-size: 2em;
+}
+
+#map {
+  width: 100%;
+  height: 50vh;
 }
 /*# sourceMappingURL=style.css.map */
