@@ -234,6 +234,7 @@ main :nth-child(2) {
 
 main :nth-child(2) img {
   height: 100%;
+  width: auto;
 }
 
 main :nth-child(3) {
