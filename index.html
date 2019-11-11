@@ -2,19 +2,19 @@
 <html lang=fr>
 
 <head>
-    <meta charset="utf-8">
     <title>Domaine de la Cozanne || Vins de Bourgogne</title>
-    <meta
-        description="Découvrez le Domaine de la Cozanne, viticulteur à Cormot-Vauchignon, et tous les crus de Bourgogne que nous proposons">
+    <meta name="description"
+        content="Découvrez le Domaine de la Cozanne, viticulteur à Cormot-Vauchignon, et tous les crus de Bourgogne que nous proposons">
     <meta name="robots" content="index, follow">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya|Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya%7cRoboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="icon" data-emoji="🍇" type="image/png">
-    <script src="script/favicon-emoji.js"></script>
+    <link rel="icon" data-emoji="🍇" href="#" type="image/png">
+    <script src="script/favicon-emoji.js" async defer></script>
+    <script src="script/burger.js" async defer></script>
     <!--TODO og tags, twitter card, canonical tag-->
 </head>
 
@@ -42,7 +42,8 @@
         </a>
     </nav>
     <section class="video">
-        <video loop="loop" autoplay loop playsinline muted>
+        <h1 class="hidden">Vidéo de présentation</h1>
+        <video loop="loop" autoplay playsinline muted>
             <source type="video/mp4" src="media/splash.mp4">
             Il est temps de mettre à jour votre navigateur !
         </video>
@@ -52,6 +53,7 @@
             <h1>Découvrez le domaine</h1>
         </section>
         <section class="main-box">
+            <h2 class="hidden">Illustration de vignes</h2>
             <img src="media/vignes-bordeaux.jpg" alt="vignes-bordeaux">
         </section>
         <section class="main-box">
@@ -66,17 +68,19 @@
             aliquam, veniam deserunt velit placeat esse.
         </section>
         <section class="main-box">
+            <h2 class="hidden">Illustration de boutilles</h2>
             <img src="media/rack.jpg" alt="racks de bouteilles">
         </section>
         <section class="main-box">
+            <h2 class="hidden">Illustration de chai</h2>
             <img src="media/chai.jpg" alt="chai">
         </section>
         <section class="main-box">
-            <h1>Le chai, un espace au service du vin</h1>
+            <h2>Le chai, bla bla bla bla bla bla</h2>
             60 tonnaux, 3000m², 40 millions de litres, des hyperboles ...
         </section>
         <section class="main-box">
-
+            <h2 class="hidden">vide</h2>
         </section>
         <section class="main-box">
             <h2>Titre article 1</h2>
@@ -118,9 +122,11 @@
             ipsa ut corrupti vitae animi ad nam iure numquam quod quis, reprehenderit dolor!
         </section>
         <section class="main-box">
+            <h2 class="hidden">Illustration article 1</h2>
             <img src="http://via.placeholder.com/960x960" alt="contenu qlc">
         </section>
         <section class="main-box">
+            <h2 class="hidden">Illustration article 2</h2>
             <img src="http://via.placeholder.com/960x960" alt="contenu qlc">
         </section>
         <section class="main-box">
@@ -163,11 +169,25 @@
             Est, quasi illo molestiae commodi beatae nisi sunt nam aliquam voluptates similique a error totam!
         </section>
         <section class="main-box">
-            La région voilà voilà on a des bons poto dans le coin qui font du vin mais pas aussi ouf que nous
+            <h2 class="hidden">Le terroir</h2>
+            La région voilà voilà on a des bons poto dans le coin qui font du vin mais pas aussi ouf que nous.
         </section>
     </main>
+    <hr>
+    <section class="acheter">
+        <h1>Achetez les produits du domaine de la cozanne</h1>
 
-    <script src="script/burger.js"></script>
+        <a href="#">Commandez en ligne</a>
+        <a href="#">Trouvez un caviste</a>
+    </section>
+    <section class="loc">
+        <h1>Où sommes nous</h1>
+        Domaine de la Cozanne -- 21340 Cormot-Vauchignon
+        <div id="map"></div>
+    </section>
+
+
+
 </body>
 
 </html>

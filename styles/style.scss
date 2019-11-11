@@ -15,15 +15,30 @@ $white: white;
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
 
 .test {
     display: none;
+
     height: 1cm;
     width: 1cm;
     background-color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+hr {
+    width: 10rem;
+    margin: auto;
+    border: 2px solid $highlight;
 }
 
 header {
@@ -124,14 +139,27 @@ nav {
     width: 100%
 }
 
+h1 {
+    text-align: center;
+    color: $text-grey;
+    font-family: 'Alegreya', serif;
+}
+
+h2 {
+    text-align: left;
+    text-indent: 2em;
+    color: $text-grey;
+    font-family: 'Alegreya', serif;
+}
+
 main {
     display: grid;
     width: 100%;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 5rem minmax(20rem, auto) 15rem 6rem 4rem repeat(2, minmax(30vw, auto)) 2cm;
+    grid-template-rows: 5rem minmax(20rem, auto) 15rem 6rem 4rem repeat(2, minmax(30vw, auto)) minmax(5rem, auto);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    grid-gap: 1em;
+    gap: 1em;
     align-items: stretch;
     font-size: 1.5em;
     color: $text-grey;
@@ -143,16 +171,7 @@ main {
         background-color: white;
         text-align: justify;
 
-        h1 {
-            text-align: center;
-            color: $text-grey;
-        }
 
-        h2 {
-            text-align: left;
-            text-indent: 2em;
-            color: $text-grey;
-        }
 
         img {
             display: block;
@@ -165,7 +184,7 @@ main {
     :nth-child(1) {
         grid-area: 1 / 1 / 2 / 7;
         padding: 0px;
-        font-family: 'Alegreya', serif;
+
         font-size: 1.5em;
     }
 
@@ -240,5 +259,72 @@ main {
     :nth-child(12) {
         grid-area: 8 / 1 / 9 / 7;
         text-align: center;
+    }
+}
+
+.acheter {
+    text-align: center;
+    width: 70%;
+    margin: 2em auto;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    gap: 1em;
+
+    a {
+        width: 20em;
+        padding: 0.5em;
+        background-color: white;
+        border: $highlight solid 2px;
+        color: $highlight;
+        font-size: 1.5em;
+        text-decoration: none;
+
+        transition: all 0.5s ease-in;
+
+        &::before {
+            content: "› ";
+        }
+
+        &:hover {
+            background-color: $highlight;
+            color: white;
+
+            &::before {
+                color: $highlight;
+            }
+        }
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    grid-template-areas: "title title"
+    "online caviste";
+
+    :nth-child(1) {
+        grid-area: title;
+    }
+
+    :nth-child(2) {
+        grid-area: online;
+    }
+
+    :nth-child(3) {
+        grid-area: caviste;
+    }
+}
+
+.loc {
+    background: $highlight;
+    color: white;
+    padding: 1em 15%;
+    font-size: 1.5em;
+
+    h1 {
+        color: white;
+        text-align: start;
+        font-size: 2em;
     }
 }

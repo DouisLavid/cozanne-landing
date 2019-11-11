@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -15,6 +19,16 @@
   height: 1cm;
   width: 1cm;
   background-color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+hr {
+  width: 10rem;
+  margin: auto;
+  border: 2px solid #C7B084;
 }
 
 header {
@@ -169,17 +183,30 @@ nav {
   width: 100%;
 }
 
+h1 {
+  text-align: center;
+  color: #333333;
+  font-family: 'Alegreya', serif;
+}
+
+h2 {
+  text-align: left;
+  text-indent: 2em;
+  color: #333333;
+  font-family: 'Alegreya', serif;
+}
+
 main {
   display: -ms-grid;
   display: grid;
   width: 100%;
   -ms-grid-columns: (1fr)[6];
       grid-template-columns: repeat(6, 1fr);
-  -ms-grid-rows: 5rem minmax(20rem, auto) 15rem 6rem 4rem (minmax(30vw, auto))[2] 2cm;
-      grid-template-rows: 5rem minmax(20rem, auto) 15rem 6rem 4rem repeat(2, minmax(30vw, auto)) 2cm;
+  -ms-grid-rows: 5rem minmax(20rem, auto) 15rem 6rem 4rem (minmax(30vw, auto))[2] minmax(5rem, auto);
+      grid-template-rows: 5rem minmax(20rem, auto) 15rem 6rem 4rem repeat(2, minmax(30vw, auto)) minmax(5rem, auto);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  grid-gap: 1em;
+  gap: 1em;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
@@ -192,17 +219,6 @@ main section {
   padding: 0.5em 1em;
   background-color: white;
   text-align: justify;
-}
-
-main section h1 {
-  text-align: center;
-  color: #333333;
-}
-
-main section h2 {
-  text-align: left;
-  text-indent: 2em;
-  color: #333333;
 }
 
 main section img {
@@ -219,7 +235,6 @@ main :nth-child(1) {
   -ms-grid-column-span: 6;
   grid-area: 1 / 1 / 2 / 7;
   padding: 0px;
-  font-family: 'Alegreya', serif;
   font-size: 1.5em;
 }
 
@@ -337,5 +352,80 @@ main :nth-child(12) {
   -ms-grid-column-span: 6;
   grid-area: 8 / 1 / 9 / 7;
   text-align: center;
+}
+
+.acheter {
+  text-align: center;
+  width: 70%;
+  margin: 2em auto;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  gap: 1em;
+      grid-template-areas: "title title" "online caviste";
+}
+
+.acheter a {
+  width: 20em;
+  padding: 0.5em;
+  background-color: white;
+  border: #C7B084 solid 2px;
+  color: #C7B084;
+  font-size: 1.5em;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.acheter a::before {
+  content: "› ";
+}
+
+.acheter a:hover {
+  background-color: #C7B084;
+  color: white;
+}
+
+.acheter a:hover::before {
+  color: #C7B084;
+}
+
+.acheter h1 {
+  font-size: 3em;
+}
+
+.acheter :nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: title;
+}
+
+.acheter :nth-child(2) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: online;
+}
+
+.acheter :nth-child(3) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: caviste;
+}
+
+.loc {
+  background: #C7B084;
+  color: white;
+  padding: 1em 15%;
+  font-size: 1.5em;
+}
+
+.loc h1 {
+  color: white;
+  text-align: start;
+  font-size: 2em;
 }
 /*# sourceMappingURL=style.css.map */
