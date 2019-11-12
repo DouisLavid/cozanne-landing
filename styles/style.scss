@@ -486,3 +486,29 @@ main {
         }
     }
 }
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: wehite;
+    padding: 1em;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        li {
+            list-style: none;
+            flex: 1 1 0;
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+
+}
