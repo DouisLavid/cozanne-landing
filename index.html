@@ -144,15 +144,60 @@
     <section class="loc">
         <div class="adresse">
             <h1>Où sommes nous</h1>
-            Domaine de la Cozanne -- 21340 Cormot-Vauchignon
+            Domaine de la Cozanne – 21340 Cormot-Vauchignon
         </div>
         <div id="map"></div>
     </section>
     <section class="contact">
         <hr>
-        <h1>vous voulez nous dire quelquechose ?</h1>
-        <form action="" method="post">
+        <h1>Vous avez une question ? Posez-là nous !</h1>
+        <form action="#" method="post">
+            <div class="form-text">
+                <input placeholder="" type="text" name="name" id="name" required>
+                <label for="name">
+                    <span>Votre nom</span>
+                </label>
+            </div>
+            <div class="form-text">
+                <input placeholder="" type="text" name="surname" id="surname" required>
+                <label for="surname">
+                    <span>Votre prénom</span>
+                </label>
+            </div>
+            <div class="form-text">
+                <input placeholder="" type="email" name="email" id="email" required>
+                <label for="email">
+                    <span>Votre email</span>
+                </label>
+            </div>
 
+            <fieldset>
+                <legend>Objet de votre question </legend>
+                <ul>
+                    <li>
+                        <input type="radio" name="objet" id="vin" value="vin" checked>
+                        <label for="vin">Le vin</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="objet" id="domaine" value="domaine">
+                        <label for="domaine">Le domaine</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="objet" id="autre" value="autre">
+                        <label for="autre">Autre chose</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <div class="form-text">
+                <textarea placeholder="" name="comment" id="comment" cols="30" rows="5" required></textarea>
+                <label for="comment"><span>Votre question</span></label>
+            </div>
+            <div class="form-consent">
+                <input type="checkbox" name="consent" id="consent" required>
+                <label for="consent">En envoyant ce message, j'accepte que les informations saisies dans ce formulaire
+                    soient exploitées pour me contacter.</label>
+            </div>
+            <button type="submit">Envoyer</button>
         </form>
     </section>
 
