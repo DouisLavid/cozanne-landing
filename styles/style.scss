@@ -452,12 +452,15 @@ main {
 
         fieldset {
             border: none;
+            width: 100%;
 
             ul {
                 display: flex;
                 flex-direction: row;
                 list-style: none;
-                justify-content: space-around;
+                justify-content: space-evenly;
+                width: 100%;
+
             }
         }
 

@@ -557,6 +557,7 @@ main :nth-child(12) {
 
 .contact form fieldset {
   border: none;
+  width: 100%;
 }
 
 .contact form fieldset ul {
@@ -568,8 +569,10 @@ main :nth-child(12) {
       -ms-flex-direction: row;
           flex-direction: row;
   list-style: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
 }
 
 .contact form .form-consent {
